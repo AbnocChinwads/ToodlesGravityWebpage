@@ -1,14 +1,50 @@
 /*--------------------------------------------------------- Body*/
+body {
+    height: 100%;
+}
 
 body {
-    background-color: blueviolet;
-    size: 100%vh;
+  background-image: url("cleo wip 1.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-attachment: scroll;
+}
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;   /* Footer height */
+}
+
+/*--------------------------------------------------------- Header*/
+
+/*--------------------------------------------------------- Section*/
+
+.section-images {
+    width:100%;
+    height:100%;
+    margin:0;
+}
+
+.gallery-img {
+    margin: 4px;
+    border: 1px solid #000;
+}
+
+img {
+    width:auto;
+    height:auto;
+    max-width:90%;
+    max-height:90%;
 }
 
 /*--------------------------------------------------------- Footer*/
 
 #footer {
-  position: fixed;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
