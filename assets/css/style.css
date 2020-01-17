@@ -52,7 +52,7 @@ body {
 }
 
 .about-text {
-    color: white;
+    color: #fff;
 }
 
 /*Allows gallery images to be same size */
@@ -72,7 +72,13 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
-    color: white;
+    background-color: #ff0000;
+    color: #fff;
     text-align: center;
+}
+
+/* Sets spacing between social media links */
+.media-links {
+    margin-left: 10px;
+    margin-right: 10px;
 }
