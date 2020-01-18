@@ -13,8 +13,6 @@ body {
     padding-bottom: 2.5rem;   /* Footer height */
 }
 
-/*--------------------------------------------------------- Header*/
-
 /*--------------------------------------------------------- Section*/
 
 /* Creates backgroud image */
@@ -57,7 +55,13 @@ body {
 }
 
 .about-text {
+    font-size: 30px;
     color: #fff;
+}
+
+#photos {
+    column-count: 4;
+    column-gap: 0px;
 }
 
 /*Allows gallery images to be same size */
@@ -90,33 +94,56 @@ body {
 
 /*--------------------------------------------------------- Media Queries*/
 
+@media (max-width: 768px) {
+    
+    div > p {
+        font-size: 15px;
+    }
+    
+    .homepage-text {
+        font-size: 15px;
+    }
+    
+    .index-image {
+        margin: 0 0 0 50px;
+    }
+    
+    .about-text {
+    font-size: 15px;
+    }
+    
+    #photos {
+        column-count: 3;
+    }
+}
+
 @media (max-width: 450px) {
+    
     div > p {
         font-size: 12px;
     }
+    
     .homepage-text {
         font-size: 12px;
     }
+    
     .index-image {
     width: 85%;
     height: 120%;
     margin: 0 0 0 50px;
     }
+    
     .about-image {
         width: 100%;
         height: 101%;
         margin: 0;
     }
-}
-
-@media (max-width: 768px) {
-    div > p {
-        font-size: 15px;
+    
+    .about-text {
+    font-size: 9px;
     }
-    .homepage-text {
-        font-size: 15px;
-    }
-    .index-image {
-        margin: 0 0 0 50px;
+    
+    #photos {
+        column-count: 2;
     }
 }
