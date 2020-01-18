@@ -19,7 +19,7 @@ body {
 .index-image {
     width: 85%;
     height: 100%;
-    margin: 0 0 0 150px;
+    margin: 0 0 0 9.375em;
 }
 
 /* Creates backgroud image */
@@ -39,29 +39,29 @@ body {
 /* Text overlay */
 .top-left {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 0.5em;
+    left: 1em;
 }
 
 /* Text overlay */
 .top-right {
     position: absolute;
-    top: 8px;
-    right: 16px;
+    top: 0.5em;
+    right: 1em;
 }
 
 .homepage-text {
-    font-size: 30px;
+    font-size: 1.875em;
 }
 
 .about-text {
-    font-size: 30px;
+    font-size: 1.875em;
     color: #fff;
 }
 
 #photos {
     column-count: 4;
-    column-gap: 0px;
+    column-gap: 0em;
 }
 
 /*Allows gallery images to be same size */
@@ -70,8 +70,8 @@ body {
     height: auto;
     max-width: 90%;
     max-height: 90%;
-    margin: 4px;
-    border: 1px solid #000;
+    margin: 0.25em;
+    border: 0.0625em solid #000;
 }
 
 /*--------------------------------------------------------- Footer*/
@@ -88,28 +88,57 @@ body {
 
 /* Sets spacing between social media links */
 .media-links {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
 }
 
 /*--------------------------------------------------------- Media Queries*/
 
+@media (min-width: 2000px) and (max-width: 2560px) {
+    
+    .nav-text {
+        font-size: 3em;
+    }
+
+    .index-image {
+        width: 83%;
+        height: 95%;
+        margin: 0 0 0 9.375em;
+    }
+
+    .homepage-text {
+        font-size: 4em;
+    }
+
+    .about-text {
+        font-size: 3em;
+    }
+
+    .about-image {
+        height: 96%;
+    }
+
+    .xlarge-display {
+        font-size: 3.125em;
+    }
+}
+
 @media (max-width: 768px) {
     
     div > p {
-        font-size: 15px;
+        font-size: 0.9375em;
     }
     
     .homepage-text {
-        font-size: 15px;
+        font-size: 0.9375em;
     }
     
     .index-image {
-        margin: 0 0 0 50px;
+        margin: 0 0 0 3.125em;
     }
     
     .about-text {
-    font-size: 15px;
+    font-size: 0.9375em;
     }
     
     #photos {
@@ -120,17 +149,17 @@ body {
 @media (max-width: 450px) {
     
     div > p {
-        font-size: 12px;
+        font-size: 0.75em;
     }
     
     .homepage-text {
-        font-size: 12px;
+        font-size: 0.75em;
     }
     
     .index-image {
     width: 85%;
     height: 120%;
-    margin: 0 0 0 50px;
+    margin: 0 0 0 3.125em;
     }
     
     .about-image {
@@ -140,7 +169,7 @@ body {
     }
     
     .about-text {
-    font-size: 9px;
+    font-size: 0.5625em;
     }
     
     #photos {
