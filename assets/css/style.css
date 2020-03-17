@@ -1,16 +1,9 @@
 /*--------------------------------------------------------- Body*/
-body {
-    height: 100%;
-}
 
-/* Keeps footer at bottom of page */
-#page-container {
+body {
     position: relative;
     min-height: 100vh;
-}
-
-#content-wrap {
-    padding-bottom: 2.5rem;   /* Footer height */
+    padding-bottom: 2.5rem; /* Footer position */
 }
 
 /*--------------------------------------------------------- Section*/
@@ -76,7 +69,7 @@ body {
 
 /*--------------------------------------------------------- Footer*/
 
-#footer {
+.footer {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -87,9 +80,30 @@ body {
 }
 
 /* Sets spacing between social media links */
-.media-links {
-    margin-left: 0.625em;
-    margin-right: 0.625em;
+.anchor-styling {
+    padding: 0.5em;
+}
+
+/*--------------------------------------------------------- Dark Mode*/
+
+.body-dark {
+    background-color: #000;
+    color: goldenrod;
+}
+
+.footer-dark {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: goldenrod;
+    text-align: center;
+}
+
+.anchor-styling-dark {
+    padding: 0.5em;
+    color: goldenrod;
 }
 
 /*--------------------------------------------------------- Media Queries*/
